@@ -10,12 +10,14 @@ Este teste consiste em criar um pequeno cadastro de clientes com vínculo de con
 - https://www.php.net/manual/en/install.windows.php
 
 # Configuração do projeto
+- Salvar seu arquivo na pasta /var/www/html
 - Executar a query table.sql ou importar o arquivo no seu SGBD para criar as tabelas necessárias.
 - No lib/database/Connection configurar seu banco de dados
 ```sh
 new PDO('database: host=localhost; dbname=nomeDatabase', 'usuarioDoBancodeDados', 'senhaDoUsuario');
 ```
 - Ao instalar o projeto na máquina rode o comando "composer install" dentro da pasta clonada
+- Acessar seu projeto no seu localhost/desafio-fullstack
 
 # Detalhes sobre o programa
 Foi utilizado a linguagem de programação PHP, juntamente com o padrão MVC
