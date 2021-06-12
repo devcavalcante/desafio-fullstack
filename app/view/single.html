@@ -1,0 +1,49 @@
+<div style="justify-content: center;
+display: flex;">
+    <section>
+        <header>
+            <h2>{{nome}}</h2>
+        </header>
+        <br>
+        <hr>
+        <br>
+        <p class="bluebutton" style="max-width: fit-content">
+            <a href="?pagina=contatos&metodo=create&id={{id}}">Adicionar Contato</a>
+        </p>
+        <br>
+        <div>
+            <table class="styled-table">
+                <tr class="active-row">
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Editar</th>
+                    <th>Excluir</th>
+                </tr>
+                {% for contato in contatos %}
+                <tr class="info">
+                    <th>{{contato.id}}</th>
+                    <th>
+                        {{contato.nome}}
+                    </th>
+                    <th>{{contato.email}}</th>
+                    <th>{{contato.telefone}}</th>
+                    <th>
+                        <p class="bluebutton">
+                            <a href="http://localhost/desafio/?pagina=contatos&metodo=change&id={{contato.id}}"
+                                title="Botão">Editar</a>
+                        </p>
+                    </th>
+                    <th>
+                        <p class="redbutton">
+                            <a href="http://localhost/desafio/?pagina=contatos&metodo=delete&id={{contato.id}}"
+                                title="Botão">Excluir</a>
+                        </p>
+                    </th>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,52 @@
+<section>
+    <h1>Clientes</h1>
+    <div>
+        <p class="bluebutton">
+            <a href="?pagina=admin&metodo=create" title="Botão">Adicionar novo cliente</a>
+        </p>
+        {% if clientes %}
+        <p class="bluebutton">
+            <a href="?pagina=relatorios&metodo=index">Visualizar contatos vinculados</a>
+        </p>
+        {% endif %}
+    </div>
+
+    <div>
+        <table class="styled-table">
+            <tr class="active-row">
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Data Registro</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+            {% for client in clientes %}
+            <tr class="info">
+                <th>{{client.id}}</th>
+                <th>
+                    <p>
+                        <a href="http://localhost/desafio/?pagina=cliente&id={{client.id}}">{{client.nome}}</a>
+                    </p>
+                </th>
+                <th>{{client.email}}</th>
+                <th>{{client.telefone}}</th>
+                <th>{{ client.data_registro|date("d/m/Y") }}</th>
+                <th>
+                    <p class="bluebutton">
+                        <a href="http://localhost/desafio/?pagina=admin&metodo=change&id={{client.id}}"
+                            title="Botão">Editar</a>
+                    </p>
+                </th>
+                <th>
+                    <p class="redbutton">
+                        <a href="http://localhost/desafio/?pagina=admin&metodo=delete&id={{client.id}}"
+                            title="Botão">Excluir</a>
+                    </p>
+                </th>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</section>

@@ -1,0 +1,226 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <style type="text/css">
+        * {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .bluebutton {
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 5px;
+            box-shadow: none;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 0.5rem;
+            background-color: outlined;
+            border-color: #517FDB;
+            color: #517FDB;
+        }
+
+        .redbutton {
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 5px;
+            box-shadow: none;
+            cursor: pointer;
+            font-weight: 500;
+            font-family: var(--primary-font-family);
+            font-size: 1rem;
+            padding: 0.5rem;
+            background-color: outlined;
+            border-color: #DB2424;
+        }
+
+        .redbutton a {
+            text-decoration: none;
+            color: #DB2424;
+        }
+
+        .bluebutton a {
+            color: #517FDB;
+        }
+
+        body {
+            background-color: #fafafa;
+        }
+
+        #corpo {
+            margin: 0 auto;
+        }
+
+        #topo {
+            padding: 20px 25px;
+            background-color: #023859;
+        }
+
+        #topo a {
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+        }
+
+        #topo a:hover {
+            text-decoration: none;
+        }
+
+        .flutuacao-dir {
+            float: right;
+        }
+
+        #conteudo {
+            padding: 20px 25px;
+        }
+
+        #conteudo h1 {
+            color: #0388A6;
+            margin-bottom: 20px;
+            justify-content: center;
+            display: flex;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        #conteudo article {
+            margin-bottom: 20px;
+        }
+
+        .active-row {
+            color: #212626;
+        }
+
+        article h2 {
+            padding-bottom: 7px;
+        }
+
+        article h2 a {
+            font-size: 22px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        article h2 a:hover {
+            text-decoration: underline;
+        }
+
+        article p {
+            font-size: 16px;
+            color: #333;
+            padding-left: 2px;
+        }
+
+        section div {
+            justify-content: space-around;
+            display: flex;
+        }
+
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-family: sans-serif;
+            min-width: 1000px;
+        }
+
+        .styled-table thead tr {
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+            font-weight: 200;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #0388A6;
+        }
+
+        .form-control {
+            -webkit-box-align: center;
+            align-items: center;
+            border: 2px solid rgba(33, 38, 38, 0.45);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            justify-content: center;
+            padding: 1.5rem;
+            margin: 0px auto;
+            width: 25%;
+        }
+
+        form {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+
+        .clientes {
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .clientes-info {
+            display: inline-flex;
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            align-items: center;
+            width: 100%;
+            padding: 0rem 0.25rem;
+        }
+
+        input {
+            background: white;
+            border: 2px solid #636363;
+            border-radius: 5px;
+            box-shadow: none;
+            font-family: var(--primary-font-family);
+            outline: none;
+            padding: 0.5rem;
+            width: 100%;
+            resize: none;
+        }
+
+        form span {
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 1.875rem;
+            color: black;
+            text-align: left;
+        }
+
+        .clientes-info span {
+            line-height: 2rem;
+        }
+    </style>
+
+    <div id="corpo">
+        <div id="topo">
+            <header>
+                <nav>
+                    <a href="http://localhost/desafio/">Home</a>
+                </nav>
+            </header>
+        </div>
+
+        <div id="conteudo">
+            {{area_dinamica}}
+        </div>
+    </div>
+</body>
+
+</html>

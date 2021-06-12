@@ -1,0 +1,14 @@
+<h1>Editar contato</h1>
+<div class="form-control">
+    <form method="post" action="?pagina=contatos&metodo=update">
+        <input type="hidden" name="id" value="{{id}}">
+        <input type="hidden" name="idcliente" value="{{idcliente}}">
+        <span>Nome</span>
+        <input type="text" name="nome" value="{{nome}}"/><br>
+        <span>Telefone</span>
+        <input type="text" name="telefone" value="{{telefone}}" /><br>
+        <span>Email</span>
+        <input type="text" name="email" value="{{email}}" /><br>
+        <input type="submit" value="Alterar" class="bluebutton" />
+</div>
+</form>

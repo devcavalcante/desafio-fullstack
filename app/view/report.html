@@ -1,0 +1,27 @@
+<div style="justify-content: center;
+display: flex;
+flex-direction: column;">
+    <header>
+        <h1>Relatório de clientes</h1>
+    </header>
+    <section>
+        {% for cliente in clientes %}
+        <h4>{{cliente.nome}}</h4>
+        <br>
+        <hr>
+        <br>
+        <div style="flex-direction: column;
+        line-height: 1.5rem;">
+            {% if cliente.nomecontato %}
+            <span><b>Contato:</b> {{cliente.nomecontato}}</span>
+            <p><span><b>Telefone:</b> {{cliente.telefonecontato}}</span></p>
+            <span><b>Email:</b> {{cliente.emailcontato}}</span>
+            {% else %}
+            <span>Cliente não tem contato vinculado</span>
+            {% endif %}
+            <br>
+            <br>
+        </div>
+        {% endfor %}
+    </section>
+</div>

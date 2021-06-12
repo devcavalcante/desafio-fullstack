@@ -1,0 +1,14 @@
+<h1>Criar Contato</h1>
+<div class="form-control">
+    <form method="post" action="?pagina=cliente&metodo=store">
+        <input type="hidden" name="id">
+        <span>Nome</span>
+        <input type="text" name="nome" /><br>
+        <span>Telefone</span>
+        <input type="text" name="telefone" /><br>
+        <span>Email</span>
+        <input type="text" name="email" /><br>
+        <input type="hidden" name="idcliente" value={{id}} /><br>
+        <input type="submit" value="Cadastrar" class="bluebutton" />
+</div>
+</form>
