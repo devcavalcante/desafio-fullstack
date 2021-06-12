@@ -5,9 +5,9 @@ Este teste consiste em criar um pequeno cadastro de clientes com vínculo de con
 - SGBD
 - Composer
 - PHP 7.>
-Passo a passo de como instalar o php na máquina:
-https://www.php.com.br/instalacao-php-linux
-https://www.php.net/manual/en/install.windows.php
+- Passo a passo de como instalar o php na máquina:
+- https://www.php.com.br/instalacao-php-linux
+- https://www.php.net/manual/en/install.windows.php
 
 # Configuração do projeto
 - Executar a query table.sql ou importar o arquivo no seu SGBD para criar as tabelas necessárias.
