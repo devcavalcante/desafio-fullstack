@@ -10,7 +10,8 @@ Este teste consiste em criar um pequeno cadastro de clientes com vínculo de con
 - https://www.php.net/manual/en/install.windows.php
 
 # Configuração do projeto
-- Salvar seu arquivo na pasta /var/www/html
+- No Linux salvar seu arquivo na pasta /var/www/html
+- No Windows salvar seu arquivo dentro da pasta do servidor utilizado na máquina (ex: wamp, xamp, etc);
 - Executar a query table.sql ou importar o arquivo no seu SGBD para criar as tabelas necessárias.
 - No lib/database/Connection configurar seu banco de dados
 ```sh
