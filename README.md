@@ -18,6 +18,7 @@ new PDO('database: host=localhost; dbname=nomeDatabase', 'usuarioDoBancodeDados'
 - Ao instalar o projeto na máquina rode o comando "composer install" dentro da pasta clonada
 
 # Detalhes sobre o programa
+Foi utilizado a linguagem de programação PHP, juntamente com o padrão MVC
 1. diretório "view" é onde fica todas as telas do sistema
 2. diretório "controller" é onde fica fica as funcionalidades do sistema que interragem com o banco de dados
 3. diretório "model" é onde fica os arquivos de conexão com o banco de dados 
